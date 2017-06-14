@@ -1,0 +1,7 @@
+{% extends 'layouts/base.html' %}
+{% block page_title %} {{album.name}} {% endblock %}
+{% block body_content %}
+  <div class="page-header">
+    <h1>{{album.name}} <small>{{album.description}}</small></h1>
+  </div>
+{% endblock %}

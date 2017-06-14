@@ -1,0 +1,23 @@
+{% extends 'layouts/base.html' %}
+{% block page_title %} Albums {% endblock %}
+{% block body_content %}
+  <div class="page-header">
+    <h1> Albums <small> Save moments of life </small></h1>
+  </div>
+  <div class="row jumbotron">
+    {%for album in album_list%}
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="..." alt="...">
+          <div class="caption">
+            <h3>{{album.name}}</h3>
+            <p>...</p>
+            <p>
+              <a href="{{album.get_absolute_url}}" class="btn btn-primary" role="button">View</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    {%endfor%}
+  </div>
+{% endblock %}

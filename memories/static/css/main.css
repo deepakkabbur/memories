@@ -1,0 +1,16 @@
+body {
+  height: 100%;
+  background: #fff url('images/black-thread-light.png') repeat;
+}
+
+.page-header {
+  border-bottom: 1px solid #777777;
+}
+
+.login {
+  margin: 50px auto;
+  width: 300px;
+}
+.login form {
+  padding: 20px;
+}
