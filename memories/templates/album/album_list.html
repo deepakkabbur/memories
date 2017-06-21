@@ -2,6 +2,9 @@
 {% block page_title %} Albums {% endblock %}
 {% block body_content %}
   <div class="page-header">
+    <div class="pull-right">
+      <a href="{% url 'albums:album_create' %}" class="btn btn-default btn-primary">Add</a>
+    </div>
     <h1> Albums <small> Save moments of life </small></h1>
   </div>
   <div class="row jumbotron">

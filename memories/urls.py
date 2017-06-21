@@ -24,4 +24,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^albums/', include('memories.apps.album.urls', namespace='albums')),
     url(r'^members/', include('django.contrib.auth.urls')),
+    url(r'^core/', include('memories.core.urls', namespace = 'core')),
 ]

@@ -1,0 +1,16 @@
+{% extends 'layouts/base.html' %}
+{% block page_title %} Create Album {% endblock %}
+{% block body_content %}
+  <div class="page-header">
+    <h1> Create Album <small> ...create memories </small></h1>
+  </div>
+  <div class="signup">
+    <form method="post" action="">
+      {% csrf_token %}
+      {{form}}
+      <div>
+        <input type="submit" value="Add"  class="btn btn-default"/>
+      </div>
+    </form>
+  </div>
+{% endblock %}
