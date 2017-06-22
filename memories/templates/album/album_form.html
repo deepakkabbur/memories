@@ -5,7 +5,7 @@
     <h1> Create Album <small> ...create memories </small></h1>
   </div>
   <div class="signup">
-    <form method="post" action="">
+    <form method="post" action="" enctype="multipart/form-data">
       {% csrf_token %}
       {{form}}
       <div>

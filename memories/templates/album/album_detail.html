@@ -2,6 +2,14 @@
 {% block page_title %} {{album.name}} {% endblock %}
 {% block body_content %}
   <div class="page-header">
-    <h1>{{album.name}} <small>{{album.description}}</small></h1>
+    <h1>{{album.name}} <small>...{{album.description}}</small></h1>
+  </div>
+  <div>
+    <div class="thumbnail">
+      <img src={{album.image.url}} alt="...">
+      <div class="caption">
+        <h3>{{album.description}}</h3>
+      </div>
+    </div>
   </div>
 {% endblock %}

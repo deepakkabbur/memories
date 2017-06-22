@@ -5,13 +5,13 @@
     <div class="pull-right">
       <a href="{% url 'albums:album_create' %}" class="btn btn-default btn-primary">Add</a>
     </div>
-    <h1> Albums <small> Save moments of life </small></h1>
+    <h1> Albums <small>... Save moments of life </small></h1>
   </div>
   <div class="row jumbotron">
     {%for album in album_list%}
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-          <img src="..." alt="...">
+          <img src={{album.image.url}} alt="...">
           <div class="caption">
             <h3>{{album.name}}</h3>
             <p>...</p>
